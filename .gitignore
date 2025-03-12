@@ -1,0 +1,23 @@
+# Исключаем временные файлы, кеши и логи
+/out/
+.repo/
+*.log
+*.txt
+*.zip
+*.tar
+*.gz
+*.img
+*.bin
+*.iso
+*.o
+*.ko
+*.a
+*.so
+*.d
+*.dtb
+*.dtbo
+*.json
+*.xml
+*.mk
+*.rc
+*.conf
