@@ -1,14 +1,17 @@
 version = 1
 
 [[analyzers]]
+name = "python"
+enabled = true
+autofix = true
+
+[[analyzers]]
 name = "java"
 enabled = true
+autofix = true
 
 [[analyzers]]
 name = "kotlin"
 enabled = true
-
-[[analyzers]]
-name = "python"
-enabled = true
+autofix = true
 
