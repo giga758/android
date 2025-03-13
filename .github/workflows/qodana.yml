@@ -1,0 +1,21 @@
+name: Qodana Code Quality Check
+
+on:
+  push:
+    branches:
+      - lineage-22.1
+  pull_request:
+    branches:
+      - lineage-22.1
+
+jobs:
+  qodana:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Qodana
+        uses: JetBrains/qodana-action@v2023.1
+        with:
+          args: --baseline qodana.sarif.json
